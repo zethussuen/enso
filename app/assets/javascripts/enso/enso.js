@@ -54,3 +54,23 @@ window.onload = function() {
 
   source.onchange();
 };
+
+$(function(){
+  $('#save-btn').on('click', function(){
+    console.log('save');
+  })
+
+  var recover = localStorage.getItem('recover');
+  var template = 
+      '# Enso Markdown Editor \n' +
+      '***\n' + 
+      'Maintained by [@zethussuen](twitter.com/zethussuen)\n'
+  ;
+
+  if(recover == null || recover == ""){
+    $('#editor_code').html(template);
+  }
+  else {
+    $('#editor_code').html(recover);
+  };
+});
