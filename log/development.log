@@ -34454,3 +34454,33 @@ Started GET "/assets/enso/enso.js?body=1" for 127.0.0.1 at 2013-06-20 18:41:31 -
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-20 18:41:31 -0400
+
+
+Started GET "/" for 127.0.0.1 at 2013-06-21 01:42:45 -0400
+Processing by SiteController#index as HTML
+  Rendered site/index.html.erb within layouts/site (0.1ms)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/enso/gfonts.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/marked/marked.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/enso/enso.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-06-21 01:42:46 -0400
