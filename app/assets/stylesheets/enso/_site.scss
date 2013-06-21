@@ -41,15 +41,41 @@ body {
 }
 
 .btn {
-  position: absolute;
-  top: em(10); right: em(10);
   display: block;
   background: rgba(255,255,255,0.3);
   text-decoration: none;
-  color: #999999;
+  color: #b0b0b0;
   font-size: em(12);
   padding: em(5) em(10);
   border: 1px solid #d0d0d0;
   border-radius: 3px;
   z-index: 999;
+  &:hover {
+    background: rgba(255,255,255,1);
+    border: 1px solid darken(#d0d0d0, 20%);
+    color: #777;
+    @include transition(width 0.5 ease-in-out);
+  }
+}
+
+.save-btn {
+  @extend .btn;
+  position: absolute;
+  top: em(10);
+  right: em(10);
+  @include transition(all 0.5 ease-in-out);
+  &:hover:after {
+    content: ' (⌘+⇧+S)';
+  }
+}
+
+.clear-btn {
+  @extend .btn;
+  position: absolute;
+  top: em(50);
+  right: em(10);
+  @include transition(all 0.5 ease-in-out);
+  &:hover:after {
+    content: ' (⌘+⇧+back)';
+  }
 }

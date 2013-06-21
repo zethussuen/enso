@@ -64,9 +64,10 @@ function saveDraft(e){
 };
 
 function clearDraft(e){
+  confirm('Are you sure you want to clear text?\n\nWarning: this cannot be undone!');
   document.getElementById('editor_code').value = "";
   localStorage.removeItem('recover');
-}
+};
 
 $(function(){
   $('#save-btn').on('click', function(){
@@ -86,4 +87,12 @@ $(function(){
   else {
     $('#editor_code').html(recover);
   };
+
+  jwerty.key('ctrl+shift+s/cmd+shift+s', function(){
+    saveDraft();
+  });
+
+  jwerty.key('ctrl+shift+backspace/cmd+shift+backspace', function(){
+    clearDraft();
+  });
 });

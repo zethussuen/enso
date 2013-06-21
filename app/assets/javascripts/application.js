@@ -15,6 +15,7 @@
 //= require turbolinks
 
 //= require marked/marked
+//= require jwerty/jwerty
 
 //= require enso/gfonts
 //= require enso/enso
