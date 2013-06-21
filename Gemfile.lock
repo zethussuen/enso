@@ -110,7 +110,7 @@ DEPENDENCIES
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.0.1)
   jquery-rails
-  mysql2
+  mysql2 (~> 0.3.11)
   rails (= 4.0.0.rc1)
   sass-rails (~> 4.0.0.rc1)
   sprockets (~> 2.10.0)
