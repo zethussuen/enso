@@ -1,3 +1,5 @@
+var draft = '';
+
 window.onload = function() {
   marked.setOptions({
     gfm: true,
@@ -55,9 +57,20 @@ window.onload = function() {
   source.onchange();
 };
 
+function saveDraft(e){
+  var draft = document.getElementById('editor_code').value;
+  localStorage.setItem('recover', draft);
+  return false;
+};
+
+function clearDraft(e){
+  document.getElementById('editor_code').value = "";
+  localStorage.removeItem('recover');
+}
+
 $(function(){
   $('#save-btn').on('click', function(){
-    console.log('save');
+    saveDraft();
   })
 
   var recover = localStorage.getItem('recover');

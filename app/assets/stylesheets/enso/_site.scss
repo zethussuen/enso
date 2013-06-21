@@ -41,11 +41,15 @@ body {
 }
 
 .btn {
-  display: block;
-  background: #999;
-  padding: 10px;
   position: absolute;
   top: em(10); right: em(10);
-  color: black;
+  display: block;
+  background: rgba(255,255,255,0.3);
+  text-decoration: none;
+  color: #999999;
+  font-size: em(12);
+  padding: em(5) em(10);
+  border: 1px solid #d0d0d0;
   border-radius: 3px;
+  z-index: 999;
 }
