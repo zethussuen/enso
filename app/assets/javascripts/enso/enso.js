@@ -77,8 +77,41 @@ $(function(){
   var recover = localStorage.getItem('recover');
   var template = 
       '# Enso Markdown Editor \n' +
-      '***\n' + 
-      'Maintained by [@zethussuen](twitter.com/zethussuen)\n'
+      'Maintained by [@zethussuen](twitter.com/zethussuen)\n' +
+      '***\n' +
+      '## Font styling\n' +
+      '*italics* or _italics_\n' +
+      '**bold** or __bold__\n' +
+      '**_a combo of both?_**\n' +
+      '~~nope~~\n' +
+      '##Creating Lists\n' +
+      '1. Oranges\n' +
+      '2. Apples\n' +
+      '  * Granny smith\n' +
+      '3. Bananas\n' +
+      ' 1. Two of them\n' +
+      '- Unordered List with a hyphen\n' +
+      '+ ... or a plus!\n\n' +
+      '##Blockquoting\n' +
+      '> Quote goes in here\n' +
+      '> -attribution\n\n' +
+      '##Tables\n' +
+      '| Tables        | Are           | Cool  |\n' +
+      '|---------------- |:-------------:| ---    --:|\n' +
+      '| col 3 is      | right-aligned | $1600 |\n' +
+      '| col 2 is      | centered      |   $12 |\n' +
+      '| zebra stripes | are neat      |    $1 |\n\n' +
+      '##Images\n' +
+      '![Alt Text](http://f.cl.ly/items/033l3B0W3J3V363r0j1w/Animated%20Gif%20on%20Giphy.gif "Alt Text")\n\n' +
+      '##Links\n' +
+      "[I'm an inline-style link](https://www.google.com)\n" +
+      "[I'm a reference-style link][Arbitrary case-insensitive reference text]\n" +
+      '[You can use numbers for reference-style link definitions][1]\n' +
+      'Or leave it empty and use the [link text itself][]\n' +
+      'Some text to show that the reference links can follow later.\n' +
+      '[arbitrary case-insensitive reference text]: https://www.mozilla.org\n' +
+      '[1]: http://slashdot.org\n' +
+      '[link text itself]: http://www.reddit.com\n'
   ;
 
   if(recover == null || recover == ""){

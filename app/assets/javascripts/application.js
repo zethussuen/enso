@@ -16,6 +16,7 @@
 
 //= require marked/marked
 //= require jwerty/jwerty
+//= require moment/moment
 
 //= require enso/gfonts
 //= require enso/enso

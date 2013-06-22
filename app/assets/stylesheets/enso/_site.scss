@@ -76,6 +76,14 @@ body {
   right: em(10);
   @include transition(all 0.5 ease-in-out);
   &:hover:after {
-    content: ' (⌘+⇧+back)';
+    content: ' (⌘+⇧+Del)';
   }
+}
+
+.guide-btn {
+  @extend .btn;
+  position: absolute;
+  top: em(90);
+  right: em(10);
+  @include transition(all 0.5 ease-in-out);
 }
