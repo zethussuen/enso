@@ -64,9 +64,15 @@ function saveDraft(e){
 };
 
 function clearDraft(e){
-  confirm('Are you sure you want to clear text?\n\nWarning: this cannot be undone!');
-  document.getElementById('editor_code').value = "";
-  localStorage.removeItem('recover');
+  var r = confirm('Are you sure you want to clear text?\n\nWarning: this cannot be undone!');
+  if (r==true )
+    {
+      document.getElementById('editor_code').value = "";
+      localStorage.removeItem('recover');
+    }
+  else {
+    e.preventDefault();
+  }
 };
 
 $(function(){
